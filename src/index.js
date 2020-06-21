@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Ui from './Ui';
+import TodoService from './todo-service';
+import createDb from './db';
+
+const todoService = new TodoService(createDb());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Ui todoService={todoService} />
   </React.StrictMode>,
   document.getElementById('root')
 );
