@@ -10,7 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "rxdb": "^8.9.0",
+    "rxdb": "^16.21.1",
     "rxjs": "^6.5.5"
   },
   "scripts": {
